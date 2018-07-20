@@ -11,7 +11,7 @@ const STORE = {
   searchTerm: null
 };
 
-//STORE EDITING
+// EDIT STORE
 
 
 function addItemToShoppingList(itemName) {
@@ -64,13 +64,13 @@ function renderShoppingList() {
   const shoppingListItemsString = generateShoppingItemsString(items);
   const itemNoun = items.length === 1 ? 'item' : 'items';
   
-  // update the live region
+  
   $('.js-list-count').text(`${items.length} ${itemNoun}`);
-  // Render the list
+  
   $('.js-shopping-list').html(shoppingListItemsString);
 
 
-  // insert that HTML into the DOM
+
   $('.js-shopping-list').html(shoppingListItemsString);
 }
 
