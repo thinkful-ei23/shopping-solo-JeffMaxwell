@@ -13,8 +13,28 @@
         <h1>Shopping List</h1>
         <form id="js-shopping-list-form">
             <label for="shopping-list-entry">Add an item</label>
-            <input type="text" name="shopping-list-entry" class="js-shopping-list-entry" placeholder="e.g., broccoli">
+            <input type="text" name="shopping-list-entry" class="js-shopping-list-entry" placeholder="bananas">
             <button type="submit">Add item</button>
+        </form>
+        <form id="js-search-form">
+          <input
+            type="text"
+            name="query"
+            id="search-term"
+            placeholder='br'
+            class="js-search-term"
+          >
+          <button type="submit">Search</button>
+          <div class="form-group">
+            <input
+              type="checkbox"
+              name="toggle-checked"
+              id="toggle-checked"
+              class="js-toggle-checked"
+            >
+            <label for="toggle-checked">Hide checked items</label>
+          </div>
+          <output name="list-count" class="js-list-count"></output>
         </form>
         <ul class="shopping-list js-shopping-list">
         </ul>

@@ -6,6 +6,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+input, output, button {
+  font: inherit;
+  display: inline-block;
+}
+
 button, input[type="text"] {
   padding: 5px;
 }
